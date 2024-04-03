@@ -8,8 +8,13 @@ import com.example.myapplication.databinding.ActivityAc2Binding
 
 class Ac_2 : AppCompatActivity() {
     private  var binding: ActivityAc2Binding?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding?.b1!!.setOnClickListener(){
+           // onBack()
+        }
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_ac2)
         val i2 = intent
         val name2 = i2.getStringExtra("name")
@@ -19,4 +24,5 @@ class Ac_2 : AppCompatActivity() {
             this?.a1?.text = age2.toString()
         }
     }
+
 }
