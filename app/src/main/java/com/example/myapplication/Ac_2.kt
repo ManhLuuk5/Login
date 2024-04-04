@@ -11,9 +11,6 @@ class Ac_2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding?.b1!!.setOnClickListener(){
-           // onBack()
-        }
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_ac2)
         val i2 = intent
@@ -23,6 +20,8 @@ class Ac_2 : AppCompatActivity() {
             this?.n1?.text = name2
             this?.a1?.text = age2.toString()
         }
+        binding?.b1!!.setOnClickListener(){
+            finish()
+        }
     }
-
 }

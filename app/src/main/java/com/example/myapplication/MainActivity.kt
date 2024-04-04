@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("age", 22)
             i.putExtra("bienBool", true)
             startActivity(i)
-
         }
     }
 }
