@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     private var binding: ActivityMainBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = setContentView(this, R.layout.activity_main)
         super.onCreate(savedInstanceState)
+        binding = setContentView(this, R.layout.activity_main)
+
         initListeners()
     }
 
