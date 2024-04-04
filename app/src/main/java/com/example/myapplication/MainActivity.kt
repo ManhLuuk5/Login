@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         initListeners()
     }
-
     private fun initListeners() {
             binding?.bTn?.setOnClickListener {
                 Intent(this, MainActivity2::class.java).apply {

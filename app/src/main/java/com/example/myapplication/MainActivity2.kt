@@ -12,8 +12,6 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        val binding :ActivityAc2Binding = DataBindingUtil.setContentView(this,com.example.myapplication.R.layout.activity_ac2)
-       // val binding: ActivityMainBinding =
-          //  ActivityMainBindingDataBindingUtil.setContentView(this, R.layout.activity_main)
         val name = intent.getStringExtra("name")
         val age = intent.getIntExtra("age", 0)
         binding.apply {
